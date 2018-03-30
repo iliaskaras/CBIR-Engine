@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="karatsin_ilias.cbir_project.View.MainGUI_CBIR">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="21" y="4" width="1122" height="509"/>
+    </constraints>
+    <properties/>
+    <border type="none" title=""/>
+    <children>
+      <grid id="6a562" binding="contentPane" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="10" bottom="10" right="10"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-9345"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="90307" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="3" anchor="0" fill="3" indent="1" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-6011"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="12a1b" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="true" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-6011"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="34bb" class="javax.swing.JButton" binding="chooseImagesButton">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="2" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <actionCommand value="chooseImages"/>
+                      <background color="-34513"/>
+                      <font name="Fira Code" size="16" style="1"/>
+                      <foreground color="-264"/>
+                      <label value="Choose Images"/>
+                      <text value="Choose Images"/>
+                    </properties>
+                  </component>
+                  <component id="59134" class="javax.swing.JButton" binding="cancelButton">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="2" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-34513"/>
+                      <font name="Fira Code" size="14" style="1"/>
+                      <foreground color="-1"/>
+                      <text value="Cancel"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <component id="4eda4" class="javax.swing.JLabel" binding="chooseImagesLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <enabled value="true"/>
+                  <font name="Fira Code" size="14" style="1"/>
+                  <foreground color="-14471733"/>
+                  <horizontalAlignment value="4"/>
+                  <text value="Choose Images to create Descriptor Vectors :"/>
+                  <verticalAlignment value="0"/>
+                  <verticalTextPosition value="0"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="a2e55" layout-manager="GridLayoutManager" row-count="3" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="2" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-6011"/>
+              <enabled value="true"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="a0a4f" class="javax.swing.JRadioButton" binding="SURFButton">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-6011"/>
+                  <font name="Fira Code" size="14" style="1"/>
+                  <foreground color="-14471733"/>
+                  <selected value="true"/>
+                  <text value="SURF"/>
+                </properties>
+              </component>
+              <component id="55bfb" class="javax.swing.JRadioButton" binding="RGBButton">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-6011"/>
+                  <font name="Fira Code" size="14" style="1"/>
+                  <foreground color="-14471733"/>
+                  <text value="RGB"/>
+                </properties>
+              </component>
+              <component id="5ad1e" class="javax.swing.JButton" binding="findSimilarImagesButton">
+                <constraints>
+                  <grid row="0" column="4" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="5" fill="0" indent="3" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-34513"/>
+                  <font name="Fira Code" size="14" style="1"/>
+                  <foreground color="-131088"/>
+                  <label value="Find Similar Images"/>
+                  <text value="Find Similar Images"/>
+                </properties>
+              </component>
+              <component id="35b5" class="javax.swing.JButton" binding="selectImageButton" default-binding="true">
+                <constraints>
+                  <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="5" fill="0" indent="4" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-34513"/>
+                  <font name="Fira Code" size="14" style="1"/>
+                  <foreground color="-264"/>
+                  <text value="Select Image"/>
+                </properties>
+              </component>
+              <component id="6a756" class="javax.swing.JTextField" binding="kneighborTxt">
+                <constraints>
+                  <grid row="1" column="5" row-span="2" col-span="1" vsize-policy="0" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="30" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="85c61" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="4" row-span="2" col-span="1" vsize-policy="0" hsize-policy="0" anchor="5" fill="0" indent="1" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <autoscrolls value="false"/>
+                  <font name="Fira Code" size="12" style="2"/>
+                  <foreground color="-14471733"/>
+                  <text value="Choose KNeighbor :"/>
+                </properties>
+              </component>
+              <component id="c2fa9" class="javax.swing.JLabel" binding="ChooseDistanceMethod">
+                <constraints>
+                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="5" fill="0" indent="4" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <autoscrolls value="false"/>
+                  <background color="-9344657"/>
+                  <font name="Fira Code" size="12" style="2"/>
+                  <foreground color="-14471733"/>
+                  <text value="Choose Distance Method :"/>
+                </properties>
+              </component>
+              <grid id="86253" binding="selectedImagePanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="0" anchor="1" fill="0" indent="4" use-parent-layout="false">
+                    <preferred-size width="300" height="300"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-13714"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <component id="f72a6" class="javax.swing.JList" binding="distanceMethods">
+                <constraints>
+                  <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-9804704"/>
+                  <enabled value="true"/>
+                  <font name="Fira Code" size="12" style="1"/>
+                  <foreground color="-4474187"/>
+                  <model>
+                    <item value="Euclidean"/>
+                    <item value="Bhattacharyya"/>
+                    <item value="Matusita"/>
+                    <item value="Histogram"/>
+                  </model>
+                  <selectionForeground color="-4514038"/>
+                  <selectionMode value="0"/>
+                </properties>
+              </component>
+              <grid id="595f0" binding="similarImagesPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="1" column="0" row-span="2" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-13714"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
